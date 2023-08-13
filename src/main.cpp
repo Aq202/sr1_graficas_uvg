@@ -55,7 +55,7 @@ void renderModel()
 
     glm::mat4 translate = glm::mat4(
         1, 0, 0, 400,
-        0, 1, 0, 400,
+        0, 1, 0, 450,
         0, 0, 1, 0,
         0, 0 ,0, 1
     );
@@ -108,7 +108,7 @@ int main(int argc, char *argv[])
     
     SDL_Init(SDL_INIT_EVERYTHING);
 
-    SDL_Window *window = SDL_CreateWindow("life", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, WINDOW_WIDTH, WINDOW_HEIGHT, 0);
+    SDL_Window *window = SDL_CreateWindow("Spaceship", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, WINDOW_WIDTH, WINDOW_HEIGHT, 0);
 
     SDL_Renderer *renderer = SDL_CreateRenderer(
         window,
